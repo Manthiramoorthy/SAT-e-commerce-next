@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 async function Home() {
-  let result = await fetch("https://fakestoreapi.com/products")
+  let result = await fetch("http://localhost:3000/api/products");
   let data = await result.json();
   return (
     <div>
